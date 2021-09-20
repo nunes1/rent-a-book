@@ -1,33 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
 import styled from 'styled-components';
 import { BookOutlined } from '@ant-design/icons';
 import { Menu, Layout } from 'antd';
+import { Link, useLocation } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import PageLayout from '../PageLayout';
 
 const { Item } = Menu;
 const { Header } = Layout;
 
-const NavigationMenu = ({ loggedIn = false }) => {
-  const [selected, setSelected] = useState('list');
+const NavigationMenu = ({ loggedIn }) => {
+  let location = useLocation();
+
+  useEffect(() => {
+    setSelected(location.pathname);
+  }, [location]);
+
+  const [selected, setSelected] = useState(location.pathname);
+
   return (
     <Header>
       <PageLayout row>
         {loggedIn ? (
-          <>
-            <Logo />
+          <Fragment>
+            <StyledLink to="/list">
+              <Logo onClick={e => setSelected('/list')} />
+            </StyledLink>
             <StyledMenu
               theme="dark"
               onClick={e => setSelected(e.key)}
               selectedKeys={[selected]}
               mode="horizontal"
             >
-              <Item key="list">Lista de Livros</Item>
-              <Item key="edit">Gerenciamento</Item>
+              <Item key="/list">
+                <Link to="/list">Lista de Livros</Link>
+              </Item>
+              <Item key="/edit">
+                <Link to="/edit">Gerenciamento</Link>
+              </Item>
             </StyledMenu>
-          </>
+          </Fragment>
         ) : (
-          <LoggedOutMenu />
+          <StyledLink to="/">
+            <LoggedOutMenu />
+          </StyledLink>
         )}
       </PageLayout>
     </Header>
@@ -45,8 +62,18 @@ const StyledMenu = styled(Menu)`
   width: 100%;
 `;
 
+const StyledLink = styled(Link)`
+  margin: auto;
+  font: icon;
+`;
+
 const LoggedOutMenu = styled(Logo)`
   margin: auto;
 `;
 
-export default NavigationMenu;
+const mapStateToProps = ({ user }) => ({
+  loggedIn: user.loggedIn,
+  name: user.name,
+});
+
+export default connect(mapStateToProps)(NavigationMenu);

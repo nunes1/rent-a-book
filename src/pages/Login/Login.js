@@ -10,7 +10,7 @@ const { Password } = Input;
 const { Content } = Layout;
 const { Item: FormField } = Form;
 
-const Login = () => {
+const Login = ({ isFetching, error, doLogin }) => {
   return (
     <StyledContent>
       <PageLayout>
@@ -18,20 +18,26 @@ const Login = () => {
           <Logo src={logo} />
           <Form
             name="formLogin"
-            onFinish={() => {}}
+            onFinish={(values) => {
+              doLogin(values.user, values.password);
+            }}
             autoComplete="off"
           >
             <FormField
+              {...(error && {
+                help: error,
+                validateStatus: 'warning',
+              })}
               name="user"
               rules={[
                 {
                   required: true,
-                  message: 'Por favor, insira um nome de usuário!',
+                  message: 'Por favor, insira um e-mail',
                 },
                 {
                   type: 'email',
                   message: 'Por favor, insira um e-mail válido',
-                }
+                },
               ]}
               hasFeedback
             >
@@ -45,11 +51,17 @@ const Login = () => {
                   message: 'Por favor, insira uma senha!',
                 },
               ]}
-              hasFeedback 
+              hasFeedback
             >
               <Password placeholder="Senha" size="large" />
             </FormField>
-            <Button type="primary" htmlType="submit" size="large" block>
+            <Button
+              type="primary"
+              htmlType="submit"
+              size="large"
+              loading={isFetching}
+              block
+            >
               Entrar
             </Button>
           </Form>
