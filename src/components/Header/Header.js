@@ -24,9 +24,9 @@ const NavigationMenu = ({ loggedIn }) => {
       <PageLayout row>
         {loggedIn ? (
           <Fragment>
-            <StyledLink to="/list">
+            <StyledLinkRight to="/list">
               <Logo onClick={e => setSelected('/list')} />
-            </StyledLink>
+            </StyledLinkRight>
             <StyledMenu
               theme="dark"
               onClick={e => setSelected(e.key)}
@@ -59,9 +59,13 @@ const Logo = styled(BookOutlined)`
 `;
 
 const StyledMenu = styled(Menu)`
-  width: 100%;
+  width: 70%;
 `;
 
+const StyledLinkRight = styled(Link)`
+  margin: auto 0px auto auto;
+  font: icon;
+`;
 const StyledLink = styled(Link)`
   margin: auto;
   font: icon;

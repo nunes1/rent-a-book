@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Table, Tag, Button, Input, Space } from 'antd';
 import {
   DownCircleFilled,
-  FieldTimeOutlined,
+  FormOutlined,
+  PlusOutlined,
   SearchOutlined,
   UpCircleFilled,
 } from '@ant-design/icons';
@@ -11,8 +12,16 @@ import {
 import bg from '../../images/endless-constellation.svg';
 import PageLayout from '../../components/PageLayout';
 import PageBackground from '../../components/PageBackground';
+import ModalBookEdit from '../../components/ModalBookEdit';
 
-const BookList = ({ name, bookList, rentBook, isRentFetching }) => {
+const BookEdit = ({
+  bookList,
+  isRentFetching,
+  editBook,
+  isEditFetching,
+  isRemoveFetching,
+  removeBook,
+}) => {
   const [expandedKeys, setExpandedKeys] = useState([]);
 
   const columns = [
@@ -91,30 +100,55 @@ const BookList = ({ name, bookList, rentBook, isRentFetching }) => {
       },
     },
     {
-      title: 'Alugar',
+      title: 'Editar',
       dataIndex: 'rented',
       key: 'rent',
       render: (_, record) => {
         return (
           <Button
             type="primary"
-            shape="round"
-            icon={<FieldTimeOutlined />}
+            shape="circle"
+            icon={<FormOutlined />}
             loading={isRentFetching}
             disabled={record.rented}
-            onClick={e => rentBook(record.id)}
+            onClick={e => showModal(record)}
           />
         );
       },
     },
   ];
 
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [currentBook, setCurrentBook] = useState({});
+
+  const showModal = record => {
+    setCurrentBook(record);
+    setIsModalVisible(true);
+  };
+
+  const handleClose = () => {
+    setCurrentBook({});
+    setIsModalVisible(false);
+  };
+
   return (
     <PageBackground background={bg}>
       <PageLayout>
         <Wrapper>
-          <Title>Olá, {name}</Title>
-          <SubTitle>Confira nossos livros disponíveis para aluguel</SubTitle>
+          <TitleWrapper>
+            <div>
+              <Title>Gerenciamento</Title>
+              <SubTitle>
+                Aqui você poderá editar os detalhes dos livros
+              </SubTitle>
+            </div>
+            <Button
+              type="primary"
+              shape="circle"
+              icon={<PlusOutlined />}
+              onClick={e => showModal()}
+            />
+          </TitleWrapper>
           <Table
             columns={columns}
             dataSource={bookList}
@@ -162,6 +196,15 @@ const BookList = ({ name, bookList, rentBook, isRentFetching }) => {
                 ),
             }}
           />
+          <ModalBookEdit
+            isModalVisible={isModalVisible}
+            handleClose={handleClose}
+            currentBook={currentBook}
+            editBook={editBook}
+            isEditFetching={isEditFetching}
+            isRemoveFetching={isRemoveFetching}
+            removeBook={removeBook}
+          />
         </Wrapper>
       </PageLayout>
     </PageBackground>
@@ -187,6 +230,13 @@ const StyleSpace = styled(Space)`
 
 const StyledTag = styled(Tag)`
   width: 100%;
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Title = styled.div`
@@ -218,4 +268,4 @@ const Italic = styled.div`
   font-weight: normal;
 `;
 
-export default BookList;
+export default BookEdit;
