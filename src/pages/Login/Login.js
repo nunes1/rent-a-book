@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Layout, Form, Input, Button } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 import bg from '../../images/endless-constellation.svg';
 import logo from '../../images/logo.svg';
 import PageLayout from '../../components/PageLayout';
+import PageBackground from '../../components/PageBackground';
 
 const { Password } = Input;
-const { Content } = Layout;
 const { Item: FormField } = Form;
 
 const Login = ({ isFetching, error, doLogin }) => {
   return (
-    <StyledContent>
+    <PageBackground background={bg}>
       <PageLayout>
         <Wrapper>
           <Logo src={logo} />
@@ -67,15 +67,10 @@ const Login = ({ isFetching, error, doLogin }) => {
           </Form>
         </Wrapper>
       </PageLayout>
-    </StyledContent>
+    </PageBackground>
   );
 };
 
-const StyledContent = styled(Content)`
-  background: url(${bg}) no-repeat;
-  background-size: cover;
-  height: calc(100vh - 64px);
-`;
 const Wrapper = styled.div`
   margin: 25% auto;
   max-width: 250px;

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "name": "Harry Potter e a Pedra Filosofal",
+    "rented": false,
+    "details": {
+      "author": "J.K. Rowling",
+      "synopsis": "Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.",
+      "releaseYear": "2017",
+      "language": "Português",
+      "publisher": "Rocco"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Jogos Vorazes",
+    "rented": false,
+    "details": {
+      "author": "Suzanne Collins",
+      "synopsis": "Na abertura dos Jogos Vorazes, a organização não recolhe os corpos dos combatentes caídos e dá tiros de canhão até o final. Cada tiro, um morto. Onze tiros no primeiro dia. Treze jovens restaram, entre eles, Katniss. Para quem os tiros de canhão serão no dia seguinte?... Após o fim da América do Norte, uma nova nação chamada Panem surge. Formada por doze distritos, é comandada com mão de ferro pela Capital. Uma das formas com que demonstra seu poder sobre o resto do carente país é com Jogos Vorazes, uma competição anual transmitida ao vivo pela televisão, em que um garoto e uma garota de doze a dezoito anos de cada distrito são selecionados e obrigados a lutar até a morte! Para evitar que sua irmã seja a mais nova vítima do programa, Katniss se oferece para participar em seu lugar. Vinda do empobrecido Distrito 12, ela sabe como sobreviver em um ambiente hostil. Peeta, um garoto que ajudou sua família no passado, também foi selecionado. Caso vença, terá fama e fortuna. Se perder, morre. Mas para ganhar a competição, será preciso muito mais do que habilidade. Até onde Katniss estará disposta a ir para ser vitoriosa nos Jogos Vorazes?",
+      "releaseYear": "2012",
+      "language": "Português",
+      "publisher": "Rocco"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "rented": true,
+    "details": {
+      "author": "Robert C. Martin",
+      "synopsis": "Clean Code is divided into three parts. The first describes the principles, patterns, and practices of writing clean code. The second part consists of several case studies of increasing complexity. Each case study is an exercise in cleaning up code—of transforming a code base that has some problems into one that is sound and efficient. The third part is the payoff: a single chapter containing a list of heuristics and “smells' gathered while creating the case studies. The result is a knowledge base that describes the way we think when we write, read, and clean code.",
+      "releaseYear": "2008",
+      "language": "Inglês",
+      "publisher": "Prentice Hall PTR"
+    }
+  },
+  {
+    "id": "4",
+    "name": "The Science of Interstellar",
+    "rented": false,
+    "details": {
+      "author": "Christopher Nolan",
+      "synopsis": "A journey through the otherworldly science behind Christopher Nolan's highly anticipated film, Interstellar, from executive producer and theoretical physicist Kip Thorne. Interstellar, from acclaimed filmmaker Christopher Nolan, takes us on a fantastic voyage far beyond our solar system. Yet in The Science of Interstellar, Kip Thorne, the physicist who assisted Nolan on the scientific aspects of Interstellar, shows us that the movie's jaw-dropping events and stunning, never-before-attempted visuals are grounded in real science. Thorne shares his experiences working as the science adviser on the film and then moves on to the science itself. In chapters on wormholes, black holes, interstellar travel, and much more, Thorne's scientific insights? Many of them triggered during the actual scripting and shooting of Interstellar?describe the physical laws that govern our universe and the truly astounding phenomena that those laws make possible.",
+      "releaseYear": "2014",
+      "language": "Inglês",
+      "publisher": "W. W. Norton & Company"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Admirável Mundo Novo",
+    "rented": false,
+    "details": {
+      "author": "Aldous Leonard Huxley",
+      "synopsis": "Um clássico moderno, o romance distópico de Aldous Huxley é incontornável para quem procura um dos exemplos mais marcantes da tematização de estados autoritários, ao lado de 1984, de George Orwell. Ele mostra uma sociedade inteiramente organizada segundo princípios científicos, na qual a mera menção das antiquadas palavras 'pai' e 'mãe' produzem repugnância. Um mundo de pessoas programadas em laboratório, e adestradas para cumprir seu papel numa sociedade de castas biologicamente definidas já no nascimento. Um mundo no qual a literatura, a música e o cinema só têm a função de solidificar o espírito de conformismo. Um universo que louva o avanço da técnica, a linha de montagem, a produção em série, a uniformidade, e que idolatra Henry Ford. Essa é a visão desenvolvida no clarividente romance Huxley. Ao lado de 1984, que criticava acidamente os governos totalitários de esquerda e de direita, o terror do stalinismo e a barbárie do nazifascismo, em Huxley o objeto é a sociedade capitalista, industrial e tecnológica, na qual a racionalidade se tornou a nova religião, a ciência é o novo ídolo, um mundo no qual a experiência do sujeito não parece mais fazer nenhum sentido, e no qual a obra de Shakespeare adquire tons revolucionários. Entretanto, o moderno clássico de Huxley não é um mero exercício de futurismo ou de ficção científica. Trata-se, o que é mais grave, de um olhar agudo acerca das potencialidades autoritárias do próprio mundo em que vivemos. Como um alerta de que, ao não se preservarem os valores da civilização humanista, o que nos aguarda não é o róseo paraíso iluminista da liberdade, mas os grilhões de um admirável mundo novo.",
+      "releaseYear": "2014",
+      "language": "Português",
+      "publisher": "Biblioteca Azul"
+    }
+  },
+  {
+    "id": "6",
+    "name": "O guia Definitivo do Mochileiro das Galáxias",
+    "rented": false,
+    "details": {
+      "author": "Douglas Adams",
+      "synopsis": "O Guia do Mochileiro das Galáxias – Segundos antes de a Terra ser destruída, Arthur Dent é salvo por Ford Prefect, um E.T. que fazia pesquisa para a nova edição de O Guia do Mochileiro das Galáxias. Pegando carona numa nave alienígena, os dois dão início a uma alucinante viagem pelo tempo e pelo espaço.",
+      "releaseYear": "2020",
+      "language": "Português",
+      "publisher": "Editora Arqueiro"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Viagens de Gulliver",
+    "rented": false,
+    "details": {
+      "author": "Jonathan Swift",
+      "synopsis": "Desde menino, Gulliver sonhava em viver grandes aventuras nos mares. Quando adulto, tornou-se médico e passou a exercer sua profissão em navios. Assim, abandonou sua família na Inglaterra para realizar o seu sonho de infância. Neste livro, ele conta como foi parar em reinos e países exóticos e as aventuras que viveu por lá.",
+      "releaseYear": "2019",
+      "language": "Português",
+      "publisher": "Scipione"
+    }
+  },
+  {
+    "id": "8",
+    "name": "O Gambito da Rainha",
+    "rented": false,
+    "details": {
+      "author": "Walter Tevis",
+      "synopsis": "'O Gambito da Rainha é puro entretenimento. É um livro que releio de tempos em tempos simplesmente pelo prazer e pela escrita perfeita.' – Michael Ondaatje, autor de O paciente inglês Romance que deu origem à aclamada série da Netflix, O Gambito da Rainha é um livro envolvente, com personagens delicados e cenas de tirar o fôlego. Uma história sobre arte, paixão e determinação que vai encantar leigos e aficionados pelo xadrez.",
+      "releaseYear": "2021",
+      "language": "Português",
+      "publisher": "Editora Arqueiro"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Ayrton Senna: Uma Lenda a Toda Velocidade",
+    "rented": false,
+    "details": {
+      "author": "Christopher Hilton",
+      "synopsis": "'Ayrton Senna – Uma lenda a toda velocidade' contém 13 luxuosos envelopes com réplicas de cartas escritas à mão, de agendas de corridas, de adesivos de escuderia autografados, entre outros itens especiais. Nesta obra encontramos o Ayrton Senna que sempre será lembrado como lenda do automobilismo e grande ser humano, que sonhou criar oportunidades para crianças e jovens brasileiros. Assim nasceu o Instituto Ayrton Senna. Assim nasceu esta obra.",
+      "releaseYear": "2009",
+      "language": "Português",
+      "publisher": "Global Editora"
+    }
+  }
+]

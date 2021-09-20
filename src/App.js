@@ -8,6 +8,7 @@ import Header from './components/Header';
 import LoginContainer from './pages/Login';
 import configureStore from './redux/configStore';
 import AuthRoute from './components/AuthRoute';
+import BookListContainer from './pages/List';
 
 function App() {
   const store = configureStore();
@@ -17,7 +18,7 @@ function App() {
         <Layout>
           <Header />
           <Switch>
-            <AuthRoute path="/list">{/* <About /> */}</AuthRoute>
+            <AuthRoute path="/list" component={BookListContainer} />
             <AuthRoute path="/edit">{/* <Users /> */}</AuthRoute>
             <Route path="/" component={LoginContainer} />
           </Switch>

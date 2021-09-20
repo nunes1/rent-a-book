@@ -1,9 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-const PageLayout = ({row, children}) => (
-  <Container>{children}</Container>
-);
+const PageLayout = ({ row, children }) => <Container>{children}</Container>;
 
 const Container = styled.div`
   max-width: 1080px;
