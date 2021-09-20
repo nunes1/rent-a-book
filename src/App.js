@@ -7,6 +7,7 @@ import './App.css';
 import Header from './components/Header';
 import LoginContainer from './pages/Login';
 import configureStore from './redux/configStore';
+import AuthRoute from './components/AuthRoute';
 
 function App() {
   const store = configureStore();
@@ -16,8 +17,8 @@ function App() {
         <Layout>
           <Header />
           <Switch>
-            <Route path="/list">{/* <About /> */}</Route>
-            <Route path="/edit">{/* <Users /> */}</Route>
+            <AuthRoute path="/list">{/* <About /> */}</AuthRoute>
+            <AuthRoute path="/edit">{/* <Users /> */}</AuthRoute>
             <Route path="/" component={LoginContainer} />
           </Switch>
         </Layout>
